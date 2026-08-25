@@ -1,0 +1,40 @@
+### GET all patients
+GET http://localhost:8080/api/patients
+
+
+###
+
+### CREATE patient
+POST http://localhost:8080/api/patients
+Content-Type: application/json
+
+{
+  "name": "Kamal Perera",
+  "email": "kamal@gmail.com",
+  "phone": "0712345678"
+}
+
+
+###
+
+### GET patient by ID
+GET http://localhost:8080/api/patients/2
+
+
+###
+
+### UPDATE patient
+PUT http://localhost:8080/api/patients/2
+Content-Type: application/json
+
+{
+  "name": "Kamal Updated",
+  "email": "kamalnew@gmail.com",
+  "phone": "0700000000"
+}
+
+
+###
+
+### DELETE patient
+DELETE http://localhost:8080/api/patients/2
